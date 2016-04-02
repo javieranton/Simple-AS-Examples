@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_toast"
+        android:title="Toast"
+        app:showAsAction="ifRoom|withText"
+    />
+
+    <item android:id="@+id/action_snakcbar"
+        android:title="SnackBar"
+        app:showAsAction="ifRoom|withText"
+        />
+
+    <item android:id="@+id/action_statusbar"
+        android:title="Status"
+        app:showAsAction="ifRoom|withText"
+        ></item>
+
+</menu>

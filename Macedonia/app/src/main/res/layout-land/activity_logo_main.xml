@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/portada_horizontal"
+    android:onClick="onClickLogo"
+    android:id="@+id/FL_logo"
+    tools:context="rabade.anton.javier.macedonia.LogoMain">
+
+</FrameLayout>

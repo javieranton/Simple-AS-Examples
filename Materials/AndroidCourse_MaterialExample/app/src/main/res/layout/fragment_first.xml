@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        tools:text="Hello i'm the tool helper"
+        android:id="@+id/editText1" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:text="Hello i'm the tool helper"
+        tools:background="#000000"
+        android:layout_weight="1"
+        android:id="@+id/textView1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#ff0000"
+        android:textStyle="bold"
+        android:textIsSelectable="false"
+        android:textSize="60dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/button1"
+        android:text="Send me to Second!"
+        android:textSize="60dp" />
+
+</LinearLayout>

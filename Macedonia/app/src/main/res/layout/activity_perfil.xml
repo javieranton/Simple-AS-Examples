@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="rabade.anton.javier.macedonia.Perfil"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="173dp">
+
+            <ImageView
+                android:layout_width="187dp"
+                android:layout_height="match_parent"
+                android:id="@+id/iv_perfil"
+                android:layout_weight="0.56"
+                android:src="@drawable/android_memory" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="151dp"
+            android:layout_height="176dp">
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickTwitterButton"
+                android:text="Twitter Image"
+                android:id="@+id/button_image_twitter" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickGalleryButton"
+                android:text="Gallery Image"
+                android:id="@+id/button_image_gallery" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickCameraButton"
+                android:text="Camera"
+                android:id="@+id/button_camera" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:id="@+id/tv_name"
+        android:layout_gravity="center_vertical"
+        android:textSize="35dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:id="@+id/tv_address"
+        android:textSize="20dp"
+        android:layout_weight="0.07" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickLogOut"
+        android:text="LogOut"
+        android:id="@+id/button_logout" />
+
+</LinearLayout>

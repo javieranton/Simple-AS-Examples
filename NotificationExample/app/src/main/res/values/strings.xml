@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">NotificationExample</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_result">ResultActivity</string>
+    <string name="snackbar_text">ESTÁS SEGURO DE QUE QUIERES HACER ESTO?</string>
+    <string name="snackbar_action">YESSSSS</string>
+</resources>

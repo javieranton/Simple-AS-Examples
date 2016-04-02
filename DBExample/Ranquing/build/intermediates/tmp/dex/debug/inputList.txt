@@ -1,0 +1,2 @@
+C:\Users\user\Dropbox\Android QP 1213\Carles\BD\RanquingProject\Ranquing\build\intermediates\classes\debug
+C:\Users\user\Dropbox\Android QP 1213\Carles\BD\RanquingProject\Ranquing\build\intermediates\pre-dexed\debug\android-support-v4-dd445cbe4a55afa7169a8bef5c8b6e1ebcc9fa17.jar

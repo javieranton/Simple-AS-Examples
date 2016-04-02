@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="rabade.anton.javier.macedonia">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icono_app"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".Login"></activity>
+        <activity android:name=".Calculadora"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+        <activity
+            android:name=".MemoryHolder"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="c76228b52240d20bff3f4acb258caadd707e3214" />
+
+        <activity android:name=".Perfil"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".LogoMain">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Music"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <service android:name=".MyServiceMusic" />
+        <activity android:name=".NavDrawer"
+            android:theme="@style/AppTheme.NoActionBar"/>
+    </application>
+
+</manifest>

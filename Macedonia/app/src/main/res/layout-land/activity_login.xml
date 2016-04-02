@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="rabade.anton.javier.mylogin.MainActivity"
+    android:background="@drawable/palmeras_horizontal">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/logo_macedonia"
+            android:layout_width="99dp"
+            android:layout_height="97dp"
+            android:id="@+id/imageView3"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="283dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="USERNAME"
+                android:layout_marginTop="5dp"
+                android:id="@+id/tv_username"
+                android:layout_above="@+id/et_username"
+                android:textColor="#ffffff"
+                android:layout_gravity="center_horizontal"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="213dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_username"
+                android:theme="@style/Theme.EditText.White"
+                android:layout_above="@+id/tv_password"
+                android:layout_alignLeft="@+id/tv_password"
+                android:layout_alignStart="@+id/tv_password"
+                android:layout_alignRight="@+id/et_password"
+                android:layout_alignEnd="@+id/et_password"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ffffff"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:contextClickable="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PASSWORD"
+                android:id="@+id/tv_password"
+                android:layout_above="@+id/et_password"
+                android:textColor="#ffffff"
+                android:layout_gravity="center_horizontal"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="213dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/et_password"
+                android:theme="@style/Theme.EditText.White"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ffffff"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.68">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Login"
+                    android:id="@+id/button_login"
+                    android:onClick="onClickLogin"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignRight="@+id/frameLayout"
+                    android:layout_alignEnd="@+id/frameLayout"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New User"
+                    android:id="@+id/button_newUser"
+                    android:onClick="onClickNewUser"
+                    android:layout_gravity="right|bottom"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <CheckBox
+                android:layout_width="146dp"
+                android:layout_height="wrap_content"
+                android:text="Remember Me"
+                android:id="@+id/checkBox"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:textColor="#ffffff"
+                android:textSize="15dp" />
+
+            <com.twitter.sdk.android.core.identity.TwitterLoginButton
+                android:id="@+id/twitter_login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

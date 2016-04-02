@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="rabade.anton.javier.mylogin.MainActivity"
+    android:background="#a6252525">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frameLayout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:id="@+id/imageView"
+            android:layout_gravity="center_horizontal|top"
+            android:background="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|bottom">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:id="@+id/button_login"
+                android:onClick="onClickNewActivity"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/frameLayout"
+                android:layout_alignEnd="@+id/frameLayout"
+                android:layout_marginRight="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New User"
+                android:id="@+id/button_newUser"
+                android:onClick="onClickNewUser"
+                android:layout_gravity="right|bottom"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/et_password"
+        android:layout_marginBottom="71dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="password"
+        android:id="@+id/tv_password"
+        android:layout_alignLeft="@id/et_password"
+        android:layout_above="@+id/et_password"
+        android:textColor="#000000" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_username"
+        android:layout_above="@+id/tv_password"
+        android:layout_alignLeft="@+id/tv_password"
+        android:layout_alignStart="@+id/tv_password"
+        android:layout_alignRight="@+id/et_password"
+        android:layout_alignEnd="@+id/et_password" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:id="@+id/tv_username"
+        android:layout_alignLeft="@id/et_username"
+        android:layout_above="@+id/et_username"
+        android:textColor="#000000" />
+
+</RelativeLayout>

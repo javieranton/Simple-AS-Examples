@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Button Focused-->
+    <item   android:state_focused="true"
+        android:state_pressed="false"
+        android:drawable="@drawable/freedos_memory"
+        />
+    <!-- Button Focused Pressed-->
+    <item   android:state_focused="true"
+        android:state_pressed="true"
+        android:drawable="@drawable/next_memory"
+        />
+    <!-- Button Pressed-->
+    <item   android:state_focused="false"
+        android:state_pressed="true"
+        android:drawable="@drawable/logo_app"
+        />
+    <!-- Button Default Image-->
+    <item   android:drawable="@color/transparent"/>
+</selector>

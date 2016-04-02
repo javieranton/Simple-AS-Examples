@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Javier\DBExample\Ranquing\libs\android-support-v4.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="bd6479f5dd592790607e0504e66e0f31c2b4d308">
+        <dex dex="C:\Users\Javier\DBExample\Ranquing\build\intermediates\pre-dexed\debug\android-support-v4_d8485c8379a116ed747a6e4e22a94c1f0ad5b95a.jar" />
+    </item>
+
+</items>
